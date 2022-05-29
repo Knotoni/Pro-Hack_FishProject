@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="SHORTCUT ICON" href="../static/img/icon.ico" type="image/x-icon">
+	<title>Main</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="logo">
+			<img src="../static/img/logo.png" alt=""> 
+		</div>
+		<div class="conteiner">
+
+			<table class="iksweb">
+				<tbody>
+                    
+					<tr>
+						<td>ID платформы</td>
+						<td>Регион</td>
+						<td>Дата</td>
+                        <td>Рыба</td>
+                        <td>Обьем</td>
+                        <td>Предпол. потерянный обьем</td>
+					</tr>
+					{% for index, row in rows.iterrows() %}
+					<tr>
+						<td>{{ row['Name_Plat'] }}</td>
+						<td>{{ row['Region_Plat'] }}</td>
+						<td>{{ row['date'] }}</td>
+                        <td>{{ row['fish'] }}</td>
+                        <td>{{ row['volume'] }}</td>
+                        <td>{{ row['volume_diff'] }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+</div>
+</body>
+</html>

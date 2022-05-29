@@ -1,0 +1,120 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: 'Arial';
+}
+
+body{
+background: #ededed;
+}
+
+table { 
+	
+    width: 100%; /* Ширина таблицы */
+     /* Рамка вокруг таблицы */
+    border-collapse: collapse; /* Отображать только одинарные линии */
+    margin: 5px 20px 20px 20px;
+
+   }
+   th { 
+    text-align: left; /* Выравнивание по левому краю */
+    background: #ccc; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px #aaa solid; /* Граница вокруг ячеек */
+   }
+   td { 
+    padding: 10px; /* Поля вокруг содержимого ячеек */
+   border: 1px #aaa solid; /* Граница вокруг ячеек */
+   }
+
+td a{
+	color: #1a7fc2;
+}
+
+.table{
+	
+	width: 90%;
+	border-collapse: collapse;
+}
+
+
+
+.table #head-table{
+	background-color: #1a7fc2;
+	color: white;
+	text-align: center;
+	height: 50px;
+	
+
+}
+.table #main-column{
+width: 65%;
+padding: 5px;
+}
+.table #grade{
+	width: 5%;
+	padding: 5px;
+}   
+.table #number{
+
+	text-align: center; 
+padding: 5px;
+
+}
+
+
+.button{
+	display: flex;
+	justify-content: center;
+}
+
+
+.closing-button {
+background: #1a7fc2;
+border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0 0 20px;
+  color: white;
+  box-shadow: 0 0 0 2px white;
+  padding: 8px;
+  width: 350px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+}	
+.closing-button#back{
+width: 250px;
+}
+
+.closing-button span {
+  font-family: 'Arial';
+  position: relative;
+  z-index: 5;
+  font-size: 14px;
+}
+.closing-button:before, .closing-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.closing-button:before {
+  transform: translateX(-100%);
+  background: white;
+  transition: transform .3s cubic-bezier(.55, .055, .675, .19);
+}
+.closing-button:after {
+  background: #1a5dc2;
+  transform: translateX(100%);
+  transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
+}
+.closing-button:hover:before, .closing-button:hover:after {
+  transform: translateX(0);
+}

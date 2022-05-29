@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/css/SignUp.css">
+	<link rel="SHORTCUT ICON" href="../static/img/icon.ico" type="image/x-icon">
+	<title>Main</title>
+</head>
+
+<body>
+	<form class="form" action="" method="POST" enctype="multipart/form-data">
+		<div class="container">
+			<div class="wrapper">
+			<div class="title_exit"><a href="back"><input type="button" value="Выход" style="border-radius:20px; text-align: center; display: flex; margin: 30px; margin-left: 300px;" class="button closing-button"></a></div>
+				<div class="title">
+					
+					<img src="../static/img/logo.png" alt="">
+					<h1>Анализ данных</h1></div>
+					<div class="">
+					<div class="login">	
+						<div class="obj">
+							<label for="Input-Field"> 
+								<p>Исходный файл №1</p>
+							</label>
+							<div class="Input-Field">
+								<input type="file" name="file"></input>
+							</div>
+						</div>
+					</div>
+					<div class="password-main">	
+						<div class="obj">
+							<label for="Input-Field"> 
+								<p>Исходный файл №2</p>
+							</label>
+							<div class="Input-Field">
+								<input type="file" name="file"></input>
+							</div>
+						</div>
+					</div>
+					<style>
+						#okno {
+						  width: 300px;
+						  height: 50px;
+						  padding: 15px;
+						  margin-left: 180px;
+						  border: 3px solid #0000cc;
+						  border-radius: 10px;
+						  color: #0000cc;
+						  display: none;
+						  align-self: center;
+						}
+						#okno:target {display: block;}
+					  </style>
+					<div id="okno">	Пожалуйста подождите, идет обработка файлов</div>
+
+					<div class="button">
+						<button href="info" type="submit" class="closing-button">Начать обработку файлов</и>
+					</div>
+					<div class="errors"></div>
+				</div>
+			</div>
+		</а>
+	</body>
+
+
+</html>

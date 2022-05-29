@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="SHORTCUT ICON" href="../static/img/icon.ico" type="image/x-icon">
+	<title>Main</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="logo">
+			<img src="../static/img/logo.png" alt=""> 
+			<h1>Краткое описание анализа</h1></div>
+		</div>
+		<div class="conteiner">
+
+			<table class="iksweb">
+				<tbody>
+					<tr>
+						<td>ID</td>
+						<td>Название компании</td>
+						<td>Число аномалий</td>
+						<td>Скачать отчет</td>
+					</tr>
+					{% for i in rows %}
+					<tr>
+						<td>{{ i[0] }}</td>
+						<td>{{ i[1] }}</td>
+						<td>{{ i[2] }}</td>
+						<td><a href="plat_report/{{ i[1] }}">Скачать</a></td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+</div>
+</body>
+</html>
